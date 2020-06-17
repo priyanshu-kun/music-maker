@@ -1,0 +1,124 @@
+
+@font-face
+{
+    font-family: "Asap-Medium.ttf";
+    src: url(Asap/Asap-Medium.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    line-height: 1.5rem;
+    font-family: "Asap-Medium.ttf";
+}
+
+
+header {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 70vh;
+    /* background: red; */
+    font-size: 1.7rem;
+    margin-top: 3rem;
+    /* opacity: 0.6; */
+    
+}
+
+header h1 {
+    color: hotpink;
+    opacity: 0.8;
+    letter-spacing: 4px;
+}
+
+header p {
+   margin-top: 3rem;
+   opacity: 0.6;
+   letter-spacing: 6px;
+}
+
+.pads {
+    /* border: 1px solid black; */
+    width: 100%;
+    /* height: 30vh; */
+    position: absolute;
+    /* top: 50%; */
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex: 1;
+    background: white;
+}
+.pads div{
+    height: 30vh;
+    flex: 1;
+    margin:0 5px;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    /* transform-origin: center; */
+}
+
+.pads div:hover{
+    opacity: 0.2;
+}
+
+.pad-1 {
+    background: #fd5151;
+}
+.pad-2 {
+    background: #00ff0d;
+}
+.pad-3 {
+    background: #00ffdd;
+}
+.pad-4 {
+    background: #ff00ff;
+}
+.pad-5 {
+    background: #ff004c;
+}
+.pad-6 {
+    background: #00ffbf;
+}
+.pad-7 {
+    background: #fbff00;
+}
+.pad-8 {
+  
+    background: #ff8800;
+}
+
+
+.visual > div {
+    position: absolute;
+    bottom: 0%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    transform: scale(1);
+    z-index: -1;
+  }
+
+
+@keyframes jump{
+    0% {
+        bottom: 0%;
+        left: 20%;
+    }
+    50% {
+        bottom: 50%;
+        left: 50%;
+    }
+    100% {
+        bottom: 0%;
+        left: 80%;
+    }
+}
